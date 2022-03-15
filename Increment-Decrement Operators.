@@ -1,0 +1,39 @@
+package chap05;
+
+public class KeyboardInputIntValue {
+
+    public static void main(String[] args) {
+        int x = 0;
+        int y = 6;
+
+        x = ++y;
+        System.out.print("x = " + x);
+        System.out.print(" / ");
+        System.out.println("y = " + y);
+
+        x = 0;
+        y = 6;
+
+        x = --y;
+        System.out.print("x = " + x);
+        System.out.print(" / ");
+        System.out.println("y = " + y);
+
+        x = 0;
+        y = 6;
+
+        x = y++;
+        System.out.print("x = " + x);
+        System.out.print(" / ");
+        System.out.println("y = " + y);
+
+        x = 0;
+        y = 6;
+
+        x = y--;
+        System.out.print("x = " + x);
+        System.out.print(" / ");
+        System.out.println("y = " + y);
+
+    }
+}
