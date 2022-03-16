@@ -1,0 +1,62 @@
+//package chap06;
+//
+//public class NestedIfStatement1 {
+//
+//    public static void main(String[] args){
+//        //비교를 위한 숫자를 관리하기 위한 변수 a를 선언하고 7로 초기화
+//        int a = 7;
+//
+//        System.out.println(" ===== if 판정 확인 ===== ");
+//
+//        if(a >= 0){
+//            System.out.println("변수 a는 0 이상입니다.");
+//            if(a <= 10){
+//                System.out.println("변수 a는 10 이하입니다.");
+//            }else{
+//                System.out.println("변수 a는 10보다 크다.");
+//            }
+//        }
+//        System.out.println(" ===== if문 판정 확인 =====");
+//    }
+//}
+
+// import java.util.Scanner 추가해서 a 값도 직접 입력하고, 10과 비교하기 위해 if문 중첩해서 한 번 더 질문함.
+
+package chap06;
+
+import java.util.Scanner;
+
+public class NestedIfStatement1 {
+
+    public static void main(String[] args) {
+
+        System.out.println(" ===== if 판정 확인 ===== ");
+
+        Scanner num = new Scanner(System.in);
+        System.out.print("숫자 a 입력 : ");
+        int a = num.nextInt();
+
+        if (a >= 0) {
+            System.out.println("a는 0 이상입니다.");
+
+            Scanner ask = new Scanner(System.in);
+            System.out.print("a를 10과 비교하시겠습니까('예' 혹은 '아니오'로 대답하시오)? ");
+            String str = ask.nextLine();
+
+            if (str.equals("예")) {
+                if (a < 10) {
+                    System.out.println("a는 10보다 작습니다.");
+                    System.out.println(" ===== if문 판정 확인 =====");
+                } else if (a > 10) {
+                    System.out.println("a는 10보다 큽니다.");
+                    System.out.println(" ===== if문 판정 확인 =====");
+                } else if (a == 10) {
+                    System.out.println("a는 10과 같습니다.");
+                    System.out.println(" ===== if문 판정 확인 =====");
+                }
+            } else {
+                System.out.println("프로그램이 종료되었습니다.");
+            }
+        }
+    }
+}
