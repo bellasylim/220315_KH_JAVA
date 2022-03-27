@@ -1,6 +1,6 @@
 package Exercise04_220322;
 
-public class Exam0401 {
+public class Exam0303 {
 
     public static void main(String[] args){
 
