@@ -23,10 +23,8 @@
 //    }
 //}
 
-//시도02
+//시도 02
 package Exercise06_220328;
-
-import java.util.Arrays;
 
 public class Exam0609 {
 
@@ -42,7 +40,7 @@ public class Exam0609 {
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr2.length; j++) {
-                if (arr[i] == arr[j]) {
+                if (arr[i] == arr2[j]) {
                     result++;
                 }
             }
