@@ -4,34 +4,31 @@ public class Exam1204 {
 
     public static boolean addMatrix(int[][] x, int[][] y, int[][] z) {
         for(int i = 0; i < z.length; i++){
-            for(int j = 0; j < z.length; j++){
+            for(int j = 0; j < z[i].length; j++){
                 z[i][j] = x[i][j] + y[i][j];
             }
         }
 
         System.out.println("행렬a");
         for(int i = 0; i < x.length; i++){
-            int[] inX = x[i];
-            for(int j = 0; j < inX.length; j++){
-                System.out.print(inX[j] + " ");
+            for(int j = 0; j < x[i].length; j++){
+                System.out.print(x[i][j] + " ");
             }
             System.out.println();
         }
 
         System.out.println("행렬b");
         for(int i = 0; i < y.length; i++){
-            int[] inY = y[i];
-            for(int j = 0; j < inY.length; j++){
-                System.out.print(inY[j] + " ");
+            for(int j = 0; j < y[i].length; j++){
+                System.out.print(y[i][j] + " ");
             }
             System.out.println();
         }
 
         System.out.println("행렬c");
         for(int i = 0; i < z.length; i++){
-            int[] inZ = z[i];
-            for(int j = 0; j < inZ.length; j++){
-                System.out.print(inZ + " ");
+            for(int j = 0; j < z[i].length; j++){
+                System.out.print(z[i][j] + " ");
             }
             System.out.println();
         }
@@ -52,6 +49,3 @@ public class Exam1204 {
 
     }
 }
-
-
-
